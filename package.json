@@ -1,0 +1,63 @@
+{
+  "name": "adminJam",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "i18n:report": "vue-cli-service i18n:report --src \\\"./src/**/*.?(js|vue)\\\" --locales \\\"src/locales/**/*.json\\\"",
+    "i18n:reload-locales": "excelVueI18n -p utils/sirius_strings.xlsx -f src/locales"
+  },
+  "dependencies": {
+    "@oruga-ui/oruga-next": "^0.5.10",
+    "axios": "^0.22.0",
+    "core-js": "^3.18.0",
+    "prettier": "^2.4.1",
+    "sass": "^1.42.1",
+    "sass-loader": "10.1.1",
+    "unique-string": "^3.0.0",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0-0",
+    "vue-smooth-reflow": "^0.1.12",
+    "vue3-click-away": "^1.2.1",
+    "vue3-smooth-scroll": "^0.8.1",
+    "vuex": "^4.0.0-0",
+    "vuex-persistedstate": "^4.1.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.13",
+    "@vue/cli-plugin-eslint": "~4.5.13",
+    "@vue/cli-plugin-router": "~4.5.13",
+    "@vue/cli-plugin-vuex": "~4.5.13",
+    "@vue/cli-service": "~4.5.13",
+    "@vue/compiler-sfc": "^3.2.13",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^7.18.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {
+      "vue/html-closing-bracket-newline": "error",
+      "vue/html-closing-bracket-spacing": "warn",
+      "no-unused-vars": "off"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
